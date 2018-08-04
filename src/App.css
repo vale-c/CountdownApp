@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/img/planet.jpg');
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.countDownTitle {
+  text-align:center;
+  line-height:100%;
+  width:100%;
+  height:100%;
+  font-size:3em;
+  letter-spacing: 2.3rem;
+  margin: 1.5em auto;
+  font-family: 'Hanalei Fill', serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FDE3A7;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.myClock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.clockDays,
+.clockHours,
+.clockMinutes,
+.clockSeconds {
+  display: flex;
+  flex: 1;
+  color: #fff;
+  font-family: 'Space Mono', Helvetica;
+  font-size: 2.5rem;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.deadlineInput {
+  margin: 30px auto;
+  width: 35vw;
+  border-radius: 10px;
+  font-family: 'Roboto Mono', Helvetica;
+  font-size: 1.5em;
+  padding: 20px;
+  text-align: center;
+}
+
+.submitBtn {
+  margin: 35px auto;
+  display: block;
+  font-family: 'Space Mono', Helvetica;
+  font-size: 2rem;
+  background-color: #FFFD7C;
+  border: none;
+  height: 50px;
+  width: 100px;
+  border-radius: 3px;
+  color: #6C7A89;
+}
+
+.submitBtn:hover {
+  background-color: #ff0000;
+  color: whitesmoke;
+}
