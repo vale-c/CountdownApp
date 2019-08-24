@@ -8,7 +8,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('./assets/img/tree-bg.jpg');
+    background: 
+      linear-gradient(
+     rgba(0, 0, 0, 0.03), 
+     rgba(84, 84, 84, 0.15)
+    ),
+     url('https://source.unsplash.com/category/landscape/1920x1080');
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -16,10 +21,10 @@ body {
     transform: translateY(0);
 }
 
+
 .countDownTitle {
     font-family: 'Hanalei Fill', serif;
     text-transform: uppercase;
-    text-align: center;
     font-size: 4em !important;
     letter-spacing: 2rem !important;
     color: #FDE3A7;
