@@ -4,29 +4,43 @@
 
 body {
     height: 100vh;
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     background: 
-      linear-gradient(
-     rgba(0, 0, 0, 0.03), 
-     rgba(84, 84, 84, 0.15)
-    ),
      url('https://source.unsplash.com/category/landscape/1920x1080');
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translateY(0);
-}
 
+    /* <filter-function> values
+    /* 
+
+    backdrop-filter: blur(2px);
+    backdrop-filter: brightness(60%);
+    backdrop-filter: contrast(40%);
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+    backdrop-filter: grayscale(30%);
+    backdrop-filter: hue-rotate(120deg);
+    backdrop-filter: invert(70%);
+    backdrop-filter: opacity(20%);
+    backdrop-filter: sepia(90%);
+    backdrop-filter: saturate(80%);
+
+    */
+
+    /* Multiple filters */
+    backdrop-filter: url('https://source.unsplash.com/category/landscape/1920x1080') blur(5px);
+
+    font-size: 62.5%; /* scale font-size in the body proportionally to the rem units*/
+}
 
 .countDownTitle {
     font-family: 'Hanalei Fill', serif;
     text-transform: uppercase;
-    font-size: 4em !important;
-    letter-spacing: 2rem !important;
+    font-size: 5rem;
+    letter-spacing: 1.4rem;
     color: #FDE3A7;
     margin: 1.5em auto;
     text-shadow: 2px 2px 4px #000000;
@@ -47,9 +61,9 @@ body {
     text-align: center;
     color: #fff;
     font-family: 'Space Mono', Helvetica;
-    font-size: 1.5em;
-    font-weight: 400;
-    margin: 1.5em;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 2.5rem;
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -62,7 +76,7 @@ body {
     font-size: 2rem;
     padding: 20px auto;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
 .submitBtn {
@@ -85,7 +99,7 @@ body {
 
 @media screen and (max-width:320px) {
     .countDownTitle {
-        font-size: 2em;
+        font-size: 2rem;
         letter-spacing: 1rem;
     }
     .clockDays,
@@ -95,7 +109,7 @@ body {
         display: flex;
         flex: 1;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         margin: 1rem auto;
     }
     .deadlineInput {
@@ -109,7 +123,7 @@ body {
 
 @media screen and (min-width:321px) and (max-width:639px) {
     .countDownTitle {
-        font-size: 1.6em;
+        font-size: 1.6rem;
         letter-spacing: 1.5rem;
     }
     .clockDays,
@@ -119,11 +133,11 @@ body {
         display: flex;
         flex: 1;
         text-align: center;
-        font-size: 1.5em;
-        margin: 2rem;
+        font-size: 3rem;
+        margin: 1rem;
     }
     .deadlineInput {
-        margin: 30px auto;
+        margin: 3rem auto;
         width: 75vw;
         font-size: 1.7rem;
         padding: 20px auto;
@@ -133,7 +147,7 @@ body {
 
 @media screen and (min-width:640px) and (max-width:959px) {
     .countDownTitle {
-        font-size: 2em;
+        font-size: 2rem;
         letter-spacing: 1rem;
     }
     .clockDays,
@@ -143,7 +157,7 @@ body {
         display: flex;
         flex: 1;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         margin: 1rem auto;
     }
     .deadlineInput {
