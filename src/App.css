@@ -7,8 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: 
-     url('https://source.unsplash.com/category/landscape/1920x1080');
+    background: url('https://source.unsplash.com/collection/1368747/1920x1280');
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
